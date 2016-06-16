@@ -54,7 +54,7 @@ API.getWaitListPosition = function(id){
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/BrabbitX/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/NCFCBot/basicBot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -182,16 +182,16 @@ API.getWaitListPosition = function(id){
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/BrabbitX/basicBot-customization/master/extension.js",
+        scriptLink: "https://rawgit.com/NCFCBot/basicBot-customization/master/extension.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/BrabbitX/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/BrabbitX/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
@@ -238,8 +238,8 @@ API.getWaitListPosition = function(id){
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/BrabbitX/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/BrabbitX/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+                OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
             }
         },
         room: {
