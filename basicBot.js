@@ -1577,6 +1577,18 @@ API.getWaitListPosition = function(id){
                     'gives you an Oreo cookie with a glass of milk!',
                     'gives you a rainbow cookie made with love :heart:',
                     'gives you an old cookie that was left out in the rain, it\'s moldy.',
+                    'gave you a cookie, but before it reaches your mouth it crumbles. Maybe that’s the way the cookie crumbled.',
+                    'gave you a cookie, but before it reaches your mouth it crumbles. Maybe that’s fate since your life is crumbling away as well…',
+                    'gave you a cookie, but it was from brab so the second you took a bite you were perm banned.  ',
+                    'gave you a cookie, It made you happy but you knew inside that it wasn’t as big as you wanted it to be.',
+                    'gave you a fortune cookie, it says: “Rush B”',
+                    'gave you a fortune cookie, it says: “Git gud”.',
+                    'gave you a fortune cookie, it says: “DO NOT READ THE NEXT SENTENCE….. You little rebel i like you <3”.',
+                    'gave you a fortune cookie, it says: “Problems that cannot be solved don’t exist in this world”.',
+                    'gave you a fortune cookie, it says: “If your gonna die…. Die cool!”',
+                    'gave you a fortune cookie, it says: “Charmanders are RED, Squirtles are BLUE, If you were a Pokèmon i would choose you <3”.',
+                    'gave you a fortune cookie, it says: “NOTICE ME SENPAI!!!”',
+                    'gave you a fortune cookie it says: “Boobs that don’t shake, aren’t boobs at all.”',
                     'bakes you fresh cookies, it smells amazing.'
                 ],
                 getCookie: function () {
