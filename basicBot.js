@@ -189,7 +189,7 @@ API.getWaitListPosition = function(id){
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
-            botName: "basicBot",
+            botName: "BotX",
             language: "english",
             chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
             maximumAfk: 120,
