@@ -178,7 +178,7 @@ API.getWaitListPosition = function(id){
     var botCreatorIDs = [];
 
     var basicBot = {
-        version: "2.1.X",
+        version: "NCFC",
         status: false,
         name: "basicBot",
         loggedInID: null,
@@ -214,6 +214,7 @@ API.getWaitListPosition = function(id){
                 ["mix", "You played a mix, which is against the rules. "],
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
+                ["g", "The song doesn't fit the rooms Genre. "],
                 ["unavailable", "The song you played was not available for some users. "],
                 ["length", "The song you played was too long. "]
             ],
@@ -239,6 +240,7 @@ API.getWaitListPosition = function(id){
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+                G: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleGlist.json",
                 OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
             }
         },
@@ -766,11 +768,11 @@ API.getWaitListPosition = function(id){
             if (basicBot.settings.welcome && greet) {
                 welcomeback ?
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcomeback, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcomebacktoNCFC, {name: user.username}));
                     }, 1 * 1000, user)
                     :
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcometoNCFC, {name: user.username}));
                     }, 1 * 1000, user);
             }
         },
