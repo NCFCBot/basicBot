@@ -221,7 +221,7 @@ API.getWaitListPosition = function(id){
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: true,
-            motdInterval: 60,
+            motdInterval: 30,
             motd: "Welcome To NCFC Enjoy the Music and Follow the Rules! RCS-Plugin: https://rcs.radiant.dj/",
             filterChat: true,
             etaRestriction: false,
@@ -768,11 +768,11 @@ API.getWaitListPosition = function(id){
             if (basicBot.settings.welcome && greet) {
                 welcomeback ?
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcomebacktoNCFC, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcomeback, {name: user.username}));
                     }, 1 * 1000, user)
                     :
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcometoNCFC, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
                     }, 1 * 1000, user);
             }
         },
