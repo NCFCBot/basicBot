@@ -236,7 +236,7 @@ API.getWaitListPosition = function(id){
             website: null,
             intervalMessages: [],
             messageInterval: 60,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
