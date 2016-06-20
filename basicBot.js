@@ -234,7 +234,7 @@ API.getWaitListPosition = function(id){
             fbLink: null,
             youtubeLink: null,
             website: null,
-            intervalMessages: [Welcome To NCFC Enjoy the Music and Follow the Rules! RCS-Plugin: https://rcs.radiant.dj/],
+            intervalMessages: [],
             messageInterval: 60,
             songstats: true,
             commandLiteral: "!",
