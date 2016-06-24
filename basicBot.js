@@ -1594,7 +1594,7 @@ API.getWaitListPosition = function(id){
                     'gave you a cookie, it says: “#Blame Clannad”',
                     'gave you a cookie, it says: “#Blame Ritzy”',
                     'gave you a cookie, it says: “Always keep your words soft and sweet, just in case you have to eat them.”',
-                    'gave you a cookie, it says: “If opportunity doesn't knock, build a door.”',
+                    'gave you a cookie, it says: “If opportunity doesn/'t knock, build a door.”',
                     'gave you a cookie, it says: “I was thinking of something dumb...but i forgot”',
                     'gave you a prophecy cookie, it says: “Bot and his cookies are always right, don't deny your fate... just accept it with honor.”',
                     'gave you a cookie, it says: “Some men dream of hentai pictures, others simply own them.”',
