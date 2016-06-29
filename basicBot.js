@@ -1425,15 +1425,16 @@ API.getWaitListPosition = function(id){
             autowootCommand: {
                 command: 'autowoot',
                 rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.autowoot);
-                    }
-                }
-            },
+            	type: 'exact',
+            	functionality: function (chat, cmd) {
+        	if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var sounds = Array("Miku-Plugin: http://mikuplugin.nightcore-fantasia.net/ RCS-Plugin: https://rcs.radiant.dj/ ");
+                    API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
+        		 }
+        	 }
+	},
 
             baCommand: {
                 command: 'ba',
