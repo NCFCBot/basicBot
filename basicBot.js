@@ -1606,6 +1606,7 @@ API.getWaitListPosition = function(id){
                     'gave you a fortune cookie, it says: “#Blame WarriorCats”',
                     'gave you a fortune cookie, it says: “#Blame Yami”',
                     'gave you a fortune cookie, it says: “#Blame insomnia”',
+                    'gave you a dark roasted misfortune cookie, it says: “#Blame Jaximuz”',
                     'gave you a fortune cookie, it says: “Always keep your words soft and sweet, just in case you have to eat them.”',
                     'gave you a fortune cookie, it says: “If opportunity doesn\'t knock, build a door.”',
                     'gave you a fortune cookie, it says: “I was thinking of something dumb...but i forgot”',
