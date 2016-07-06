@@ -634,11 +634,11 @@ API.getWaitListPosition = function(id){
             },
             changeDJCycle: function () {
                 var toggle = $(".cycle-toggle");
-                if (toggle.hasClass("disabled")) {
+                if (toggle.hasClass("enabled")) {
                     toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
-                            if (toggle.hasClass("enabled")) toggle.click();
+                            if (toggle.hasClass("disabled")) toggle.click();
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
                 }
