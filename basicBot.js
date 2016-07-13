@@ -178,7 +178,7 @@ API.getWaitListPosition = function(id){
     var botCreatorIDs = [];
 
     var basicBot = {
-        version: "2.4-NCFC",
+        version: "2.5-NCFC",
         status: false,
         name: "BotX",
         loggedInID: null,
