@@ -643,7 +643,7 @@ API.getWaitListPosition = function(id){
                 if (toggle.hasClass("disabled")) {
                     toggle.click();
                 }
-            }
+            },
             intervalMessage: function () {
                 var interval;
                 if (basicBot.settings.motdEnabled) interval = basicBot.settings.motdInterval;
