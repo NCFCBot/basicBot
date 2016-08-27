@@ -178,12 +178,12 @@ API.getWaitListPosition = function(id){
     var botCreatorIDs = [];
 
     var basicBot = {
-        version: "2.9-NCFC",
+        version: "3.0-NCFC",
         status: false,
         name: "BotX",
         loggedInID: null,
         scriptLink: "https://rawgit.com/NCFCBot/basicBot-customization/master/extension.js",
-        cmdLink: "http://git.io/245Ppg",
+        cmdLink: "http://tiny.cc/botx-commands-v1",
         chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
