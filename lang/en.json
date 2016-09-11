@@ -82,7 +82,7 @@
     "eatcookie": "/me eats a cookie.",
     "nousercookie": "/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
-    "selfhug": "/me @%%NAME%%, you're almost as pathethic as Toasty. Giving hugs to yourself but not sharing any #blame Toasty",
+    "selfhug": "/me @%%NAME%%, OMG you're so pathethic, giving hugs to yourself but not sharing any, shame one you!",
     "cookie": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "cycleguardtime": "/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
