@@ -1666,7 +1666,7 @@ API.getWaitListPosition = function(id){
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eathug);
                             return false;
                         }
                         else {
