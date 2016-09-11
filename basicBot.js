@@ -1640,9 +1640,16 @@ API.getWaitListPosition = function(id){
                 command: 'hug',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['This Is a Test HUG',
-                    'This Is Also a Test Hug',
-                    'This is another Test Hug'
+                cookies: ['hugs you',
+                    'hugs you and says: "I love you"',
+                    'hugs you and starts nibbling on your ear',
+                    'hugs you so hard that for a moment your soul leaves your body',
+                    'hugs you and says: "I will never let you go"',
+                    'says he wants a hug',
+                    'hugs you and says: "I hope this hug makes your day brighter"',
+                    'hugs you and says: "Shut up and hug me back"',
+                    'hugs you and says: "Dont leave me alone"',
+                    'hugs you and is never letting go again'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
