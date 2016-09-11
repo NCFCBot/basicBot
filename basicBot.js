@@ -1059,7 +1059,7 @@ API.getWaitListPosition = function(id){
                     basicBot.room.usercommand = false;
                     setTimeout(function () {
                         basicBot.room.usercommand = true;
-                    }, basicBot.settings.commandCooldown * 1000);
+                    }, basicBot.settings.commandCooldown * 100);
                 }
                 if (executed) {
                     API.moderateDeleteChat(chat.cid);
