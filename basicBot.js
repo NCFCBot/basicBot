@@ -1650,7 +1650,7 @@ API.getWaitListPosition = function(id){
                     'hugs you and says: "Shut up and hug me back"',
                     'hugs you, but suddenly yells: "Its Just a Prank!"',
                     'gives you a warm hug',
-                    'gives you a hug. But wait? Sike it's a cuddle.',
+                    'gives you a hug. But wait? Sike its a cuddle.',
                     'gives you a bear hug',
                     'hugs you and is never letting go again'
                 ],
