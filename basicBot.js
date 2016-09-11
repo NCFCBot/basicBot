@@ -1653,7 +1653,7 @@ API.getWaitListPosition = function(id){
                     'Test11',
                     'Test12'
                 ],
-                gethug: function () {
+                getHug: function () {
                     var c = Math.floor(Math.random() * this.hugs.length);
                     return this.hugs[c];
                 },
@@ -1678,7 +1678,7 @@ API.getWaitListPosition = function(id){
                                 return API.sendChat(subChat(basicBot.chat.selfhug, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.hug, {nameto: user.username, namefrom: chat.un, hug: this.gethug()}));
+                                return API.sendChat(subChat(basicBot.chat.hug, {nameto: user.username, namefrom: chat.un, hug: this.getHug()}));
                             }
                         }
                     }
