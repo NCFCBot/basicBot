@@ -1635,6 +1635,85 @@ API.getWaitListPosition = function(id){
                     }
                 }
             },
+            
+                        hugCommand: {
+                command: 'hug',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['has given you a chocolate chip cookie!',
+                    'has given you a soft homemade oatmeal cookie!',
+                    'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
+                    'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
+                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
+                    'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
+                    'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
+                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
+                    'gives you a fortune cookie. It reads "Take a risk!"',
+                    'gives you a fortune cookie. It reads "Go outside."',
+                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
+                    'gives you a fortune cookie. It reads "Do you even lift?"',
+                    'gives you a fortune cookie. It reads "m808 pls"',
+                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
+                    'gives you a fortune cookie. It reads "I love you."',
+                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
+                    'gives you an Oreo cookie with a glass of milk!',
+                    'gives you a rainbow cookie made with love :heart:',
+                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
+                    'gave you a cookie, but before it reaches your mouth it crumbles. Maybe that’s the way the cookie crumbled.',
+                    'gave you a cookie, but before it reaches your mouth it crumbles. Maybe that’s fate since your life is crumbling away as well…',
+                    'gave you a cookie, but it was from brab so the second you took a bite you were perm banned.  ',
+                    'gave you a cookie, It made you happy but you knew inside that it wasn’t as big as you wanted it to be.',
+                    'gave you a fortune cookie, it says: “Rush B”',
+                    'gave you a fortune cookie, it says: “Git gud”.',
+                    'gave you a fortune cookie, it says: “DO NOT READ THE NEXT SENTENCE….. You little rebel i like you <3”.',
+                    'gave you a fortune cookie, it says: “Problems that cannot be solved don’t exist in this world”.',
+                    'gave you a fortune cookie, it says: “If your gonna die…. Die cool!”',
+                    'gave you a fortune cookie, it says: “Charmanders are RED, Squirtles are BLUE, If you were a Pokèmon i would choose you <3”.',
+                    'gave you a fortune cookie, it says: “NOTICE ME SENPAI!!!”',
+                    'gave you a fortune cookie, it says: “Boobs that don’t shake, aren’t boobs at all.”',
+                    'gave you a fortune cookie, it says: “Always keep your words soft and sweet, just in case you have to eat them.”',
+                    'gave you a fortune cookie, it says: “If opportunity doesn\'t knock, build a door.”',
+                    'gave you a fortune cookie, it says: “I was thinking of something dumb...but i forgot”',
+                    'gave you a prophecy cookie, it says: “Bot and his cookies are always right, don\'t deny your fate... just accept it with honor.”',
+                    'gave you a fortune cookie, it says: “Some men dream of hentai pictures, others simply own them.”',
+                    'gave you a fortune cookie, it says: “Wherever you are, the cookie will be with you”',
+                    'gave you a fortune cookie, it says: “I’m your COOKIE”',
+                    'gave you a nice chocolate cookie, but it was from ritzy... so the moment you took a bite you got trolled hard >.>',
+                    'gave you a fortune cookie, it says: “ when life brings you a troll, swing it with a banhammer, all your problems will be solved straight away.”',
+                    'gave you a fortune cookie, it says: “No Waifu No laifu”',
+                    'bakes you fresh cookies, it smells amazing.'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatcookie);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
 
             cycleCommand: {
                 command: 'cycle',
