@@ -1648,7 +1648,10 @@ API.getWaitListPosition = function(id){
                     'says he wants a hug',
                     'hugs you and says: "I hope this hug makes your day brighter"',
                     'hugs you and says: "Shut up and hug me back"',
-                    'hugs you and says: "Dont leave me alone"',
+                    'hugs you, but suddenly yells: "Its Just a Prank!"',
+                    'gives you a warm hug',
+                    'gives you a hug. But wait? Sike it's a cuddle.',
+                    'gives you a bear hug',
                     'hugs you and is never letting go again'
                 ],
                 getCookie: function () {
