@@ -1636,8 +1636,46 @@ API.getWaitListPosition = function(id){
                 }
             },
             
-	hugCommand: { command: 'hug', rank: 'user', type: 'startsWith', hugs: ['testmessage', 'testmessagetwo' ], gethug: function () { var c = Math.floor(Math.random() * this.hugs.length); return this.hugs[c]; }, functionality: function (chat, cmd) { if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); if (!basicBot.commands.executable(this.rank, chat)) return void (0); else { var msg = chat.message; var space = msg.indexOf(' '); if (space === -1) { API.sendChat(basicBot.chat.hugshimself); return false; } else { var name = msg.substring(space + 2); var user = basicBot.userUtilities.lookupUserName(name); if (user === false || !user.inRoom) { return API.sendChat(subChat(basicBot.chat.nouserhug, {name: name})); } else if (user.username === chat.un) { return API.sendChat(subChat(basicBot.chat.selfhug, {name: name})); } else { return API.sendChat(subChat(basicBot.chat.hug, {nameto: user.username, namefrom: chat.un, hug: this.gethug()})); } } } } },
+                        hugCommand: {
+                command: 'hug',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['This Is a Test HUG',
+                    'This Is Also a Test Hug',
+                    'This is another Test Hug'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
 
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatcookie);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
+	
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
