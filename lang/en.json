@@ -80,6 +80,7 @@
     "deletechat": "/me [@%%NAME%%] Cleared the chat of %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% commands: %%LINK%%",
     "eatcookie": "/me eats a cookie.",
+    "eathug": "/me hugs himself.",
     "nousercookie": "/me doesn't see %%NAME%% in room and eats a cookie himself.",
     "nouserhug": "/me doesn't see %%NAME%% in room and hugs myself.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
