@@ -203,7 +203,7 @@ API.getWaitListPosition = function(id){
             maximumCycletime: 10,
             timeGuard: true,
             maximumSongLength: 10,
-            autodisable: true,
+            autodisable: false,
             commandCooldown: 0,
             usercommandsEnabled: true,
             lockskipPosition: 3,
