@@ -258,7 +258,7 @@ API.getWaitListPosition = function(id){
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (basicBot.status && basicBot.settings.autodisable) {
-                    API.sendChat('!autodisable');
+                    API.sendChat('!afkdisable');
                     API.sendChat('!joindisable');
                 }
             },
