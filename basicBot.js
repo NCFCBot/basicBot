@@ -23,7 +23,7 @@ API.getWaitListPosition = function(id){
     var kill = function () {
         clearInterval(basicBot.room.autodisableInterval);
         clearInterval(basicBot.room.afkInterval);
-        basicBot.status = false;
+        basicBot.status = true;
     };
 
     var storeToStorage = function () {
