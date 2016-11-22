@@ -1645,7 +1645,7 @@ API.getWaitListPosition = function(id){
                     'hugs you and starts nibbling on your ear',
                     'hugs you so hard that for a moment your soul leaves your body',
                     'hugs you and says: “I will never let you go”',
-                    'says he wants a hug',
+                    'wants a hug',
                     'hugs you and says: “I hope this hug makes your day brighter”',
                     'hugs you and says: “Shut up and hug me back”',
                     'hugs you but suddenly yells: “Its Just a Prank!”',
