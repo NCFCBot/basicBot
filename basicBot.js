@@ -1589,7 +1589,7 @@ API.getWaitListPosition = function(id){
                     'gave you a fortune cookie, it says: “DO NOT READ THE NEXT SENTENCE….. You little rebel i like you <3”.',
                     'gave you a fortune cookie, it says: “Problems that cannot be solved don’t exist in this world”.',
                     'gave you a fortune cookie, it says: “If your gonna die…. Die cool!”',
-                    'gave you a fortune cookie, it says: “Charmanders are RED, Squirtles are BLUE, If you were a Pokèmon i would choose you <3”.',
+                    'gave you a fortune cookie, it says: “Charmanders are RED, Squirtles are BLUE, If you were a Pokèmon I would choose you <3”.',
                     'gave you a fortune cookie, it says: “NOTICE ME SENPAI!!!”',
                     'gave you a fortune cookie, it says: “Boobs that don’t shake, aren’t boobs at all.”',
                     'gave you a fortune cookie, it says: “Always keep your words soft and sweet, just in case you have to eat them.”',
