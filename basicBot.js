@@ -183,7 +183,7 @@ API.getWaitListPosition = function(id){
         name: "BotX",
         loggedInID: null,
         scriptLink: "https://rawgit.com/NCFCBot/basicBot-customization/master/extension.js",
-        cmdLink: "https://github.com/NCFCBot/Commands/wiki/NCFC-Bot-Commands",
+        cmdLink: "http://tiny.cc/ncfc-commands",
         chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
