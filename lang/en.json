@@ -41,6 +41,7 @@
     "spam": "/me @%%NAME%%, please don't spam.",
     "roomadvertising": "/me @%%NAME%%, don't post links to other rooms please.",
     "adfly": "/me @%%NAME%%, please change your autowoot program. We recommend TastyPlug: http://fungustime.pw/tastyplug/",
+    "socket": "/me @%%NAME%%, please don't spam.",
 
 
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
