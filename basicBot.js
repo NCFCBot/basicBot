@@ -941,7 +941,7 @@ API.getWaitListPosition = function(id){
                 return true;
             }
             msg = msg.toLowerCase();
-            if (msg === 'skip this shit') {
+            if (msg === 'skip_this_shit') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
