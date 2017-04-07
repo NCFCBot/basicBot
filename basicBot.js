@@ -941,13 +941,8 @@ API.getWaitListPosition = function(id){
                 return true;
             }
             msg = msg.toLowerCase();
-            if (msg === 'skip') {
+            if (msg === 'skip this shit') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
-                return true;
-            }
-	    msg = msg.socket();
-	    if (msg === 'joined using the Socket app for iPhone/iPad! Download it for free at http://socket.dj') {
-                API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
                 return true;
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
