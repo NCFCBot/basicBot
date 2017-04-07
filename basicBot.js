@@ -992,6 +992,7 @@ API.getWaitListPosition = function(id){
                     return true;
                 }
 		if (msg === 'joined using the Socket app for iPhone/iPad! Download it for free at http://socket.dj') {
+		API.moderateDeleteChat(chat.cid);
                 API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
                 return true;
             }
