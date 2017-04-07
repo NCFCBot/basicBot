@@ -945,6 +945,7 @@ API.getWaitListPosition = function(id){
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
+	    msg = msg.socket();
 	    if (msg === 'joined using the Socket app for iPhone/iPad! Download it for free at http://socket.dj') {
                 API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
                 return true;
