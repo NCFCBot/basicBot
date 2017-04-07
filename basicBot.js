@@ -992,9 +992,9 @@ API.getWaitListPosition = function(id){
                     return true;
                 }
 		if (msg === 'joined using the Socket app for iPhone/iPad! Download it for free at http://socket.dj') {
-		API.moderateDeleteChat(chat.cid);
-                API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
-                return true;
+                	API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
+			API.moderateDeleteChat(chat.cid)
+               		return true;
             }
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
                     API.moderateDeleteChat(chat.cid);
