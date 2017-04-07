@@ -1091,7 +1091,7 @@ API.getWaitListPosition = function(id){
                 'gringo', 'fuder', 'http://loli.dance', 'loli.dance', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka', 'socket.dj'
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka', 'socket'
             ]
         },
         connectAPI: function () {
