@@ -991,7 +991,7 @@ API.getWaitListPosition = function(id){
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
                     return true;
                 }
-		if (msg.indexOf('http://socket.dj/') > -1) {
+		if (msg.contains('http://socket.dj') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.socket, {name: chat.un}));
                     return true;
