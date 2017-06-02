@@ -216,6 +216,7 @@ API.getWaitListPosition = function(id){
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["g", "The song doesn't fit the rooms Genre. "],
 		["bq", "The song has really bad quality and therefore it was skipped. "],
+		["s", "The song doesn't fit the current season and therefore it was skipped. "],
                 ["unavailable", "The song you played was not available for some users. "],
                 ["length", "The song you played was too long. "]
             ],
