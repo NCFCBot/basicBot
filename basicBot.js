@@ -243,7 +243,8 @@ API.getWaitListPosition = function(id){
                 NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
                 G: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleGlist.json",
 		BQ: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleBQlist.json",
-                OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
+		S: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleSlist.json",
+                OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json",
             }
         },
         room: {
