@@ -2087,7 +2087,7 @@ API.getWaitListPosition = function(id){
             },
 
             lockskipCommand: {
-                command: 'lockskip',
+                command: 'ls',
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
